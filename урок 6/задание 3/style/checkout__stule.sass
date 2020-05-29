@@ -1,0 +1,88 @@
+@import "_style_mixin.sass"
+
+.order-data
+    summary
+        padding-left: 5px
+        padding-bottom: 34px;
+        padding-right: 50vw;
+        &::-webkit-details-marker 
+            display: none
+    &__list
+        list-style-type: none
+        counter-reset:  item 
+    &__link
+        display: flex
+        @include text_style ($font-f,16px,bold,#222222)
+        border-bottom: $border_botton
+        margin-top: 34px
+        &:before
+            counter-increment: item
+            content: '0' counter(item) '.'
+    
+.shipping-adress
+    display: flex
+    justify-content: space-between
+    margin-bottom: 79px
+    span 
+        @include text_style ($font-f,13px,300,#b3b2b2)    
+        line-height: 20px
+        text-transform: none 
+        line-height: 29px 
+    & input[type="radio"]
+        margin-right: 14px
+        margin-bottom: 19px
+
+
+.heading4
+    @include text_style ($font-f,13px,bold,#222222)
+    &__check_position 
+        padding-top: 32px
+        &:after
+            content: '*'
+            color: #ff0d0d;
+            padding-left: 3px
+    &__regised_position
+        margin-bottom: 19px
+.heading5
+    @include text_style ($font-f,13px,300,#b3b2b2) 
+    &__check_position  
+        line-height: 20px
+        text-transform: none
+        margin-top: 15px
+        margin-bottom: 34px  
+    &__regised_position
+        text-transform: none
+        margin-top: 15px
+        margin-bottom: 34px 
+
+.button
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    transition:  1s
+    &:hover
+        box-shadow: 4px 8px 3px 1px rgba(255, 156, 57, 1)
+        border: 1px solid #ff0d0d
+        background: linear-gradient(121deg, rgb(255, 62, 0) 0%, rgb(234, 186, 78) 72%)
+        text-shadow: 4px 4px 2px rgba(150, 149, 150, 1)
+        
+        
+    &__check_position
+        padding: 19px 53px
+        margin-top: 34px
+        @include text_style ($font-f,14px,bold, #4a4a4a)
+    &__regised_position
+        padding: 19px 81px 19px 55px
+        @include text_style ($font-f,14px,bold, #4a4a4a)
+
+.shipping-adress__regised
+    & input:not([type="button"])
+        height: 45px
+        width: 390px
+        background-color: #ffffff
+        border: 1px solid #eaeaea
+        padding-left: 10px
+        margin-bottom: 15px
+    & span 
+        margin-left: 32px
+
+    

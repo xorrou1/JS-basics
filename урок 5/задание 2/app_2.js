@@ -29,24 +29,6 @@ function cardReplacement(clickButtonEvent){
 	} else {
 		hideMoreText(card);
 	}
-
-
-
-	//Чесно пытался по другому сделать, но в итоге пришол к выводу что ваш вариант самыйоптимальный.
-	/* function showMoreText(card){
-		paragraph.classList.add('product-text');
-		paragraph.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium obcaecati reprehenderit ipsam nobis est consectetur placeat ex, dolore quaerat hic?';
-		cardNode.replaceChild(paragraph,card.img);
-		card.button.innerText = 'Отмена';
-	};
-
-	function hideMoreText(card){
-		const imd = document.createElement('.product-i');
-		imd.innerHTML = 
-		card.img = document.querySelector('.product-i');
-		cardNode.replaceChildproduct(card.img,paragraph);
-		console.log(card);
-	}; */
 }; 
 
 function showMoreText(card){

@@ -1,0 +1,156 @@
+@import "_style_mixin.sass"
+
+.wrapper heder,
+.CartItemsList__wrapper
+    border-bottom: $border_botton
+    margin-bottom: 21px
+    padding-bottom: 21px
+
+.wrapper__heder,
+.CartItemsList__wrapper,
+.CartItem-module__actions,
+.wrapper__CartSidebar,
+.pD_h
+    display: flex
+    justify-content: space-between
+    
+     
+.wrapper 
+    margin-top: 90px
+    &_left
+      width: calc((100% / 12) * 5 )  
+    &_right
+      width: calc((100% / 12) * 7 ) 
+      display: flex
+      justify-content: space-between
+      align-items: center   
+
+
+.pD_h 
+    &-s 
+        @include grid(5,0)
+    span
+        @include text_style ($font-f,13px,bold,#222222)
+        letter-spacing: -0.01em
+        line-height: 20px
+        text-transform: uppercase
+
+.CartItem-module
+    display: flex
+    &_imageWrapper
+        img 
+            width: 100px
+            height: 115px
+            margin-right: 21px
+    &__details  
+        h3 
+            @include text_style ($font-f,13px,300,#222222)
+            margin-bottom: 38px  
+            margin-top: 10px
+        P 
+            @include text_style ($font-f,13px,300,#575757)
+            line-height: 20px  
+            font-weight: 600    
+        span 
+            font-weight: 300
+            padding-left: 5px
+    &__actions
+        input[type="number"]
+            text-align: center
+            height: 34px
+            width: 54px
+            box-sizing: border-box
+            padding: 0 1em
+        &::-webkit-outer-spin-button,
+        ::-webkit-inner-spin-button
+            -webkit-appearance: none
+
+.actionsWrapper  
+    display: flex
+    justify-content: center
+    align-items: center
+    &__uP
+        @include grid(5,0)
+    &__q
+        @include grid(5,0)
+    &__ship
+        @include grid(5,0)
+    &__sub
+        @include grid(5,0)
+    &__act
+        @include grid(5,0)
+    
+.button__wrapper__csc
+    height: 50px
+    width: 235px
+    @include text_style ($font-f,14px,bold,#4a4a4a)
+    text-transform: uppercase
+    background-color: rgba(255, 255, 255, 1)
+    border: $border_botton
+    &:hover
+         border: 2px solid $color-hover
+         color: $color-hover
+
+.grid
+    @include grid(3,5%)
+    text-align: left
+    display: flex
+    flex-direction: column
+    &:last-child
+        margin-right: 0
+        text-align: center
+
+.shipping__total
+    display: flex
+    justify-content: space-between
+    padding-top: 63px
+    margin-bottom: 53px
+    input[type="text"],select
+        height: 45px
+        padding-left: 10px
+        padding-right: 10px
+        border: 1px solid rgba(234, 234, 234, 1)
+        margin-bottom: 23px
+        @include text_style ($font-f,13px,300,#b1b1b1)
+        text-transform: none
+    h2 
+        @include text_style ($font-f,16px,bold,#222222)
+        margin-bottom: 23px
+    input[type="button"]
+        height: 35px
+        border: 1px solid rgba(234, 234, 234, 1)
+        @include text_style ($font-f,11px,bold,#4a4a4a)
+        background-color: rgba(255, 255, 255, 1)
+        margin-bottom: 23px
+        &:hover 
+            border: 2px solid #f16d7f
+            color: #373b2d
+    
+.shippingAdress__box
+    input[type="button"]
+        width: 100px
+
+.couponDiscount__box
+    h3 
+        @include text_style ($font-f,14px,300,black)
+        text-transform: none
+        margin-bottom: 23px
+    input[type="button"] 
+        width: 115px
+
+.total__box
+    background-color: rgba(245, 243, 243, 1)
+    height: 214px
+
+.total
+    text-align: end
+    padding: 43px
+    input[type="button"]
+        background-color: rgba(241, 109, 127, 1)
+        @include text_style ($font-f,16px,bold,white)
+        height: 50px
+        width: 273px
+    h3 
+        @include text_style ($font-f,11px,300,#4a4a4a)
+        margin-bottom: 14px
+
