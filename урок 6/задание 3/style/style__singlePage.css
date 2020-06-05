@@ -1,0 +1,241 @@
+.carousel-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7f7f7;
+  border: 1px solid #eaeaea;
+}
+
+.carousel__image {
+  margin-top: 11px;
+  margin-bottom: 47px;
+}
+
+.carousel__image img {
+  height: 724px;
+  width: 597px;
+}
+
+.carousel__arrow {
+  height: 47px;
+  width: 47px;
+  background-color: rgba(42, 42, 42, 0.15);
+  text-align: center;
+  line-height: 47px;
+}
+
+.carousel__arrow span {
+  font-family: 'FontAwesome';
+  font-size: 24px;
+  color: white;
+}
+
+.products-collection {
+  padding-top: 763px;
+}
+
+.products-collection__heading {
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: 900;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  margin: 72px;
+}
+
+.products-listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products-listing__img {
+  background-color: #e9e9e9;
+}
+
+.mango_size {
+  height: 280px;
+  width: 93px;
+}
+
+.section {
+  position: relative;
+  margin: 0 calc(50% - 570px);
+}
+
+.detail-buy {
+  text-align: center;
+  position: absolute;
+  top: -86px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.detail-buy_size {
+  padding: 0 calc(50% - 322px);
+}
+
+.detail-buy__specifications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px;
+}
+
+.title-buy__greeting {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: bold;
+  color: #f16d7f;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-top: 74px;
+  padding-bottom: 15px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid #eaeaea;
+  width: 148px;
+  display: inline-block;
+}
+
+.title-buy__firstType {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 900;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.title-buy__firstType_size {
+  font-size: 14px;
+  text-align: start;
+}
+
+.text-buy {
+  display: inline-block;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 300;
+  color: #5e5e5e;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-top: 67px;
+  margin-bottom: 20px;
+}
+
+.text-buy_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-buy_properties {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: bold;
+  color: #b9b9b9;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.text-buy_properties:first-child {
+  margin-right: 44px;
+}
+
+.text-buy_properties span {
+  font-size: 14px;
+}
+
+.choose-buy::-webkit-outer-spin-button,
+.choose-buy ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.choose-buy select[name^="choose"] {
+  height: 35px;
+  width: 144px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-family: "Lato";
+  font-size: 13px;
+  font-weight: 300;
+  color: #bcbcbc;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.choose-buy select[name="choose-color"] {
+  background: url(../img/single_page/callor_red.png) no-repeat border-box 11% center;
+  padding-left: 30px;
+}
+
+.choose-buy input[type="number"] {
+  padding: 0 13px;
+  height: 33px;
+  width: 118px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-family: "Lato";
+  font-size: 13px;
+  font-weight: 300;
+  color: #bcbcbc;
+  text-transform: uppercase;
+}
+
+.title-buy__price {
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: bold;
+  color: #ef5b70;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-top: 37px;
+  padding-bottom: 47px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.button__buy {
+  text-align: right;
+  padding-right: 189px;
+  height: 55px;
+  width: 525px;
+  background-color: #ffffff;
+  border: 1px solid #ef5b70;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: bold;
+  color: #ef5b70;
+  text-transform: uppercase;
+  margin-bottom: 117px;
+  background: url(../img/single_page/carr.png) no-repeat content-box 61% center;
+  -webkit-transition: border .7s, color .7s;
+  transition: border .7s, color .7s;
+}
+
+.button__buy:hover {
+  border: 1px solid #111010;
+  color: #83f045;
+}
+
+.button__buy:active {
+  border: 2px solid #f09aa7;
+}
+/*# sourceMappingURL=style__singlePage.css.map */

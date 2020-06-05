@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.chess-board{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.chess-title{
+
+}
+
+.board{
+	height: 500px;
+	width: 500px;
+	border: 2px solid black;
+}
+
+.board-line{
+	display: flex;
+	height: calc(100%/8);
+}
+
+.border-cell{
+	width: calc(100%/8);
+	border: 1px solid black;
+}
+
+.border-cell-white{
+	background-color: white
+}
+
+.border-cell-black{
+	background-color: black
+}
+
+.border-cell-number{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+}
